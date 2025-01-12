@@ -3,78 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Hobbies and Adventures</title>
+    <meta name="description" content="Explore my hobbies and adventures through this interactive page">
+    <link rel="stylesheet" href="./css/style.css">
+ 
+    <link rel="stylesheet" href="./css/script.js">
+    <link rel="stylesheet" href="./css/style.js">
+
 </head>
 <body>
-   <section>
-    <h2>hooby</h2>
-    <div class="slider">
-    <input type="radio"  name="hobby" id="hooby1" checked>
-    <input type="radio"  name="hobby" id="hooby2">
-    <input type="radio"  name="hobby" id="hooby3">
-    </div>
-    <div class="slides">
-        <div class="overflow">
-            <div class="inner">
-                <div class="slide hobby_1">
-                    <div class="hoobb-content">
-                   
-                        <img src="images/red.jpg" alt="stylesheet">
-                        <p>i like reading books when i got free time the best book i have ever read was "yale geze"it was wrriten by lij nati ,the book is his life story</p>
-                    </div>
-                </div>
-                <div class="slide hobby_1">
-                    <div class="hoobb1-content">
-                        <img src="images/wor2.jpg" alt="stylesheet" >
-                        <p>i am a gosple singer in my church , my best gospel singer of all time is dawite getachew</p>
-                        <audio controls loop muted autoplay>
-                            <source src="audio/Dawit_Getachew-Amelkihalehu.mp3">
-                        </audio>
-                        
-                            
-                    </div>
-                </div>
-                <div class="slide hobby_1">
-                    <div class="hoobb2-content">
-                        <img src="images/chu.jpg" alt="stylesheet">
-                        <p> i go to church every sunday .</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div id="content">
-        <label for="hooby1"></label>
-        <label for="hooby2"></label>
-        <label for="hooby3"></label>
-    </div>
-    <div id="bullets">
-        <label for="hooby1"></label>
-        <label for="hooby2"></label>
-        <label for="hooby3"></label>
-    </div>
-    </section>
-    <section>
-        <h2>adventure</h2>
+    <header>
+    
+        <a href="#" class="logo"><span style="color: rgb(16, 58, 197);">blen </span><span style="color: white;">gebre</span></a>
        
-                
-                            <div class="adv-content">
-                           <video src="video/Hawassa__Ethiopia__Amora_Gedel(720p).mp4" ></video>
-                           <p>i went to hawassa 3 years ago .it was so beautifull and clean .Location: Situated about 275 kilometers (171 miles) south of Addis Ababa, Ethiopia's capital, along the Trans-African Highway.
-                            Lake Hawassa: The city lies on the shores of Lake Hawassa, a freshwater lake famous for its tranquil beauty and rich biodiversity.
-                            </p></div>
-                            <div>
-                           <img src="video/Source_of_bluenile_#Ethiopia#Bahirdar#travel_#mountainview_#nature#tis_abayfall#bluenile(720p).mp4"  alt="stylesheet" >
-                           <p> i went to baher dare 2 year ago and visited lake tana .Lake Tana is the largest lake in Ethiopia and a prominent natural feature in Africa. It holds significant ecological, cultural, and historical importance. Below are some key details about Lake Tana:
-                            Location: Lake Tana is situated in the northwestern Ethiopian Highlands in the Amhara region, near the city of Bahir Dar.
-                            Size: It covers an area of approximately 3,673 square kilometers (1,418 square miles) and has an average depth of around 9 meters (30 feet), with its maximum depth reaching about 14 meters (46 feet).
-                            Source of the Blue Nile: Lake Tana is the main source of the Blue Nile River, which flows out of the lake and joins the White Nile in Sudan to form the Nile River.
-                            </p>
-                        </div>
-                            
-                        </section>
+        <nav>
+            
+          <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+           
+          </div>
+          </nav>
+          <ul class="nav-links" >
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="aout me.html">About us</a></li>
+          <li><a href="cv.html">Cv</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="contact me.html">Contact me</a></li>
+      </ul>
+      
+     
+  </header>
+  
+   </header>
+   <h1 style="text-align: center;">Hobby</h1>
+     <section class="image-slider">
+       <div class="slider-container">
+         <div class="slides">
+           <!-- Slide 1 -->
+           <div class="slide">
+             <img src="./images/photo_3_2024-12-31_09-24-59.jpg" alt="Reading a Book">
+             <p style="border: 1px solid black ; background-color: rgb(82, 138, 198);padding: 10px;border-radius: 10px;">I like reading books during my free time. The best book I have ever read is "Yale Geze," written by Lij Nati. The book tells his life story.</p>
+           </div>
+           <!-- Slide 2 -->
+           <div class="slide">
+             <img src="./images/photo_2_2024-12-31_09-24-59.jpg" alt="Gospel Choir">
+             <p style="border: 1px solid black ; background-color: rgb(82, 138, 198);padding: 10px;border-radius: 10px;">I am a gospel singer in my church. My favorite gospel singer of all time is Dawit Getachew.</p>
+             <audio controls>
+               <source src="./audio/Dawit Getachew - Amelkihalehu.mp3">
+             </audio>
+           </div>
+           <!-- Slide 3 -->
+           <div class="slide">
+             <img src="./images/photo_1_2024-12-31_09-24-59.jpg" alt="Church">
+             <p style="border: 1px solid black ; background-color: rgb(82, 138, 198);padding: 10px;border-radius: 10px;">I go to church every Sunday.</p>
+           </div>
+         </div>
+         <!-- Navigation -->
+         <div class="navigation">
+           <button class="prev">❮</button>
+           <button class="next">❯</button>
+         </div>
+       </div>
+     </section>
+     <h1 style="text-align: center;">Adventures</h1>
+     <section class="video-slider">
+      <div class="video-slides">
+        <!-- Slide 1 -->
+        <div class="video-slide">
+          <video src="./audio/Hawassa__Ethiopia__Amora_Gedel(720p).mp4" controls></video>
+          <p class="video-description">
+            I went to Hawassa 3 years ago. It was so beautiful and clean. Location: Situated about 275 kilometers (171 miles) south of Addis Ababa, Ethiopia's capital, along the Trans-African Highway. Lake Hawassa: The city lies on the shores of Lake Hawassa, a freshwater lake famous for its tranquil beauty and rich biodiversity.
+          </p>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="video-slide">
+          <video src="./audio/Source_of_bluenile_#Ethiopia#Bahirdar#travel_#mountainview_#nature#tis.mp4" controls></video>
+          <p class="video-description">
+            I went to Bahir Dar 2 years ago and visited Lake Tana. Lake Tana is the largest lake in Ethiopia and a prominent natural feature in Africa. Location: Lake Tana is situated in the northwestern Ethiopian Highlands in the Amhara region, near the city of Bahir Dar. It covers an area of approximately 3,673 square kilometers (1,418 square miles).
+          </p>
+        </div>
+      </div>
+    
+      <!-- Navigation Buttons -->
+      <div class="video-navigation">
+        <button class="video-prev">&lt;</button>
+        <button class="video-next">&gt;</button>
+      </div>
+    </section>
+
                        
-                            
-                        </body>
-                        </html>
+                     
+                       
+     <script src="./css/script.js"></script>
+     <script src="./css/style.js"></script>   
+   </body>
+   </html>
+   
